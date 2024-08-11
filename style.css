@@ -143,6 +143,22 @@ input[type=checkbox]{
   overflow: hidden;
 }
 
+.header-topic, .header-topic span{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.header-topic h1{
+  font-size: 50px;
+  text-wrap: nowrap;
+}
+
+.header-topic span box-icon{
+  transform: scale(2);
+  rotate: 45deg;
+}
+
 .header2 img{
   object-fit: cover;
   object-position: center;
@@ -533,5 +549,14 @@ legend{
 
   .footer1-item{
     margin: 40px 0;
+  }
+
+  .header-topic h1{
+    font-size: 40px;
+  }
+  
+  .header-topic span box-icon{
+    transform: scale(1.8);
+    rotate: 45deg;
   }
 }
