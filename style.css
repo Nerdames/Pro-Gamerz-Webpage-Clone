@@ -89,6 +89,10 @@ nav li a:hover{
   color:rgb(186, 184, 184);
 }
 
+.active{
+  color:rgb(186, 184, 184);
+}
+
 #hideSidebar{
   display: none;
   align-items: center;
