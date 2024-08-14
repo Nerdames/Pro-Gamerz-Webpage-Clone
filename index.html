@@ -35,23 +35,50 @@
         </label>
       </div>
       <div class="header2">
-        <img src="1.jpg" alt="">
-        <div class="slide">
-          <div class="brief">
-            <h3>DIY WASHING TIPS</h3>
-            <br>
-            <h2>Importance of Regular Car Washing</h2>
-            <br>
-            <p>By LeonW</p>
+        <div class="slider">
+
+          <div class="slides">
+            <!--slide input start-->
+            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--slide input end-->
+            <!--slide image start-->
+            <div class="slide first">
+              <img src="1.jpg" alt="">
+            </div>
+  
+            <div class="slide">
+              <img src="2.jpg" alt="">
+            </div>
+  
+            <div class="slide">
+              <img src="3.jpg" alt="">
+            </div>
+  
+            <div class="slide">
+              <img src="4.jpg" alt="">
+            </div>
+            <!--slide image end-->
+            <!--automatic navigation button start-->
+            <div class="auto-nav">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+            <!--automatic navigation button start-->
+            <!--manual navigation button start-->
+            <div class="manaul-nav">
+              <label for="radio1" id="manual-btn"></label>
+              <label for="radio2" id="manual-btn"></label>
+              <label for="radio3" id="manual-btn"></label>
+              <label for="radio4" id="manual-btn"></label>
+            </div>
+            <!--manual navigation button end-->
           </div>
         </div>
-      </div>
-      <div class="slider">
-        <input type="radio" name="slide" id="slide1" checked>
-        <input type="radio" name="slide" id="slide2">
-        <input type="radio" name="slide" id="slide3">
-        <input type="radio" name="slide" id="slide4">
-        <input type="radio" name="slide" id="slide5">
       </div>
     </header>
 
