@@ -140,13 +140,9 @@ input[type=checkbox]{
 
 .header2{
   display: flex;
-  position: relative;
   width: 100%;
-  min-height: 250px;
-  max-height: 550px;
-  overflow: hidden;
+  justify-content: center;
 }
-
 .header-topic, .header-topic span{
   display: flex;
   align-items: center;
@@ -163,44 +159,114 @@ input[type=checkbox]{
   rotate: 45deg;
 }
 
-.header2 img{
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
+.slider{
+  max-width: 1200px;
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides{
+  width: 500%;
   height: 100%;
+  display: flex;
+}
+
+.slides input{
+  display: none;
 }
 
 .slide{
-  display: flex;
-  position: absolute;
-  justify-content: space-between;
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  width: 20%;
   height: 100%;
+  transition: 2s;
 }
 
-.brief{
-  justify-content: center;
-  text-align: center;
-  width: 100%;
+.slide img{
+  width: 100%
 }
 
-.brief h2, .brief h3,.brief p{
-  color: white;
+.auto-nav{
+  position: absolute;
+  display: flex;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.auto-nav div{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid red;
+  transition: 1s;
+}
+
+.auto-nav div:not(:last-child){
+  margin-right: 20px;
+}
+
+.manaul-nav{
+  position: absolute;
+  display: flex;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#manual-btn{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: 1s;
+}
+
+#manual-btn:not(:last-child){
+  margin-right: 20px;
+}
+
+#manual-btn:hover{
+  background-color: white;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+#radio1:checked ~ .auto-nav .auto-btn1{
+  background-color: white;
+}
+
+#radio2:checked ~ .auto-nav .auto-btn2{
+  background-color: white;
+}
+
+#radio3:checked ~ .auto-nav .auto-btn3{
+  background-color: white;
+}
+
+#radio4:checked ~ .auto-nav .auto-btn4{
+  background-color: white;
 }
 
 
-.slider{
-  display: block;
-  margin: 20px auto;
-}
 
-.slider input[type=radio]{
-  margin: 2px;
-}
+
+/* MAIN */
+
 
 .main1{
   display: flex;
