@@ -198,7 +198,7 @@ input[type=checkbox]{
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px solid red;
+  border: 2px solid white;
   transition: 1s;
 }
 
