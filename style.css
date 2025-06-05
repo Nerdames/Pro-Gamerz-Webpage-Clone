@@ -18,17 +18,18 @@ p, h1, h2, h3, h4,h5{
 }
 
 
-.container{
+.container {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 60px auto auto auto;
   grid-template-areas:
-  "nav nav nav nav"
-  "header header header header"
-  "main main main aside"
-  "footer footer footer footer";
+    "nav nav nav nav"
+    "header header header header"
+    "main main main aside"
+    "footer footer footer footer";
   height: 100vh;
 }
+
 
 nav{
   grid-area: nav;
